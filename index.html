@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- For proper phone zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Making the command line fun (for Mac)</title>
+    <meta name="application-name" content="Making the command line fun (for Mac)">
+    <meta name="author" content="Alan Palazzolo">
+    <meta name="description" content="Making the command line fun (for Mac)">
+    <meta name="keywords" content="command line">
+    <meta name="robots" content="index, follow">
+    <meta name="rating" content="General">
+    <link rel="dns-prefetch" href="//zzolo.org">
+
+    <!-- Styles-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/project.css" type="text/css">
+
+    <!-- Social Media Tags -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://zzolo.org/command-line-fun">
+    <meta property="og:title" content="Making the command line fun (for Mac)">
+    <meta property="og:description" content="Making the command line fun (for Mac)">
+    <meta property="og:site_name" content="zzolo">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@zzolo">
+    <meta name="twitter:creator" content="@zzolo">
+    <meta name="twitter:title" content="Making the command line fun (for Mac)">
+    <meta name="twitter:description" content="Making the command line fun (for Mac)">
+    <meta name="twitter:image" content="">
+  </head>
+
+  <body class="">
+    <!-- Skip to main content -->
+    <a href="#main-content" class="to-main-content sr-only">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="project-header" role="banner">
+      <div class="container">
+        <h1>Making the command line fun</h1>
+
+        <em>Unfortunately this is only focused for Macs.  Linux users can probably translate a lot of this, but Windows is widely different.</em>
+      </div>
+    </header>
+
+    <!-- Main content here -->
+    <main id="main-content" role="main">
+      <div class="container">
+        <section>
+          <p>The command line (a.k.a. the terminal, or console, or shell, or <abbr title="command line interface">CLI</abbr>) is just a simplified, text-based interface into your computer.</p>
+
+          <p>The command line can be difficult to use and to learn, as it’s basically like learning a whole new system, and finding your way and getting help can be difficult.</p>
+
+          <p>Let’s make it a little easier, or at least a little more enjoyable.  This guide will focus on getting the command line to look better, specifically in hopes to make it more usable, and along the way we’ll learn some basics and tips for using the command line.</p>
+        </section>
+
+        <section>
+          <h1>What's the deal?</h1>
+
+          <p>By default on a Mac, if you open up the <span class="application-name">Terminal</span> application, you get this &amp; a wall of white that is kind of intimidating, and it's not inviting you to get anything done.</p>
+
+          <figure class="figure">
+            <div class="needs-image"></div>
+            <figcaption class="figure-caption">Screenshot of default Terminal</figcaption>
+          </figure>
+
+          <p>And if you run a few commands, you get just get a wall of text, and it's very hard to read it and pull out information that you want.</p>
+
+          <figure class="figure">
+            <div class="needs-image"></div>
+            <figcaption class="figure-caption">Screenshot of default Terminal with some command</figcaption>
+          </figure>
+
+          <p>The goal is to end up with something that is both fun and will actually help you get things done, and of course, we'll learn a bit about the mysterious command line along the way.</p>
+
+          <figure class="figure">
+            <div class="needs-image"></div>
+            <figcaption class="figure-caption">Screenshot of potential command line</figcaption>
+          </figure>
+        </section>
+
+        <section>
+          <h1>Along the way</h1>
+
+          <p>Since we assume you don't know any command line, we will be introducing a lot of side notes and it'll be important to keep things organized.  The following conventions are used to keep things a bit more organized.</p>
+
+          <h2>Asides</h2>
+
+          <div class="row">
+            <div class="col-sm">
+              <div class="important-aside"></div>
+              <h3>Important</h3>
+              <p>This is important and you should not ignore this.</p>
+            </div>
+
+            <div class="col-sm">
+              <div class="note-aside"></div>
+              <h3>Note</h3>
+              <p>A not that is probably pretty helpful but not necessary.</p>
+            </div>
+
+            <div class="col-sm">
+              <div class="sidequest-aside"></div>
+              <h3>Sidequest</h3>
+              <p>A not that is probably pretty helpful but not necessary.</p>
+            </div>
+
+            <div class="col-sm">
+              <div class="future-aside"></div>
+              <h3>Future you</h3>
+              <p>Notes for future you that will forget things like how to update things.</p>
+            </div>
+          </div>
+
+          <h2>Commands</h2>
+
+          <p>You will see commands to enter into the command line show like the following.  If they are inline, they may show up like <code class="commands">this command</code>.  Or they may separated out like this:</p>
+
+          <aside class="note-aside">
+            <h1>Money, money, money</h1>
+
+            <p>Here and in other sites, you may see a <code class="commands">$</code> symbol when describing putting a command into the command line.  The <code class="commands">$</code> is a generic symbol for your <span class="important-term">prompt</span>; the prompt is just where you put in the command line.  On the default <span class="application-name">Terminal</span> application, it looks like this:</p>
+
+            <figure class="figure">
+              <div class="needs-image needs-image-small"></div>
+              <figcaption class="figure-caption">Small image of default command prompt</figcaption>
+            </figure>
+          </aside>
+
+          <pre class="commands"><code>
+$ command --option
+          </code></pre>
+
+          <h2>Other formatting</h2>
+
+          <ul>
+            <li><span class="application-name">Terminal</span> - This denotes an application.</li>
+            <li><span class="important-term">Important term</span> - This denotes an important term that will probably be used often.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>Fonts</h1>
+
+          <p>The first thing we want to do is install a new font.  Specifically, we want a monospace font; a monospace font means that each character takes up the same width.  This is extremely helpful for coding or the command line, as you can line things up vertically by spacing.  MacOS comes up monospace fonts, but later on, we need a font that can support certain types of characters, so we’re gonna install some new fonts.</p>
+
+          <p>The prompt in the command line, is the set of characters that show up before you type in your command.  Usually this show where you are in the filesystem, but it can be set to whatever, and can be very useful in giving you helpful info.  We are going to install a prompt called Powerline.  Powerline adds a lot of helpful information for most people and is very extensible.  Powerline is a specific project, but there are many projects that are alternatives of Powerline that are called the same thing, so you can think of it as a general style of prompt.</p>
+
+          <p>For Powerline to work, we need fonts that support specific characters.  Luckily, we have many options.  The Powerline fonts project has many altered fonts that have the characters we need.  You can use whatever one you want, but for consistency sake, let’s use Source Code Pro.</p>
+
+          <ol class="instruction-list">
+            <li>Download: https://github.com/powerline/fonts/archive/master.zip</li>
+            <li>Navigate to the file in Finder.</li>
+            <li>Unzip it; you can do that by double-clicking it in Finder.</li>
+            <li>Navigate into the new folder and into “SourceCodePro”</li>
+            <li>Select all the “.off” files, right-click and choose “Open”</li>
+            <li>This will open up a number of font dialog boxes.  Choose “Install Font” on each one.</li>
+            <li>Feel free to install other font sets, as you may prefer them.</li>
+          </ol>
+
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+      <div class="container">
+        <p>todo</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./.js"></script>
+  </body>
+</html>
